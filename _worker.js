@@ -2,7 +2,7 @@
 // @ts-ignore
 
 function MainConfig() {
-  globalThis.uzerID = "12345678-1111-1234-1234-1234567890ab";
+  globalThis.uzerID = "729c7f85-44a0-4a9d-b357-b6cfd817c4a4";
   globalThis.qrexyIP = atob('Y2lwLnRyb25iYW5rLnNpdGU=');
 }
 function WebConfig() {
@@ -24,7 +24,7 @@ export default {
 			globalThis.CLxIP = env.PROXYIP || globalThis.qrexyIP;
 
 			if (!isValidUUID(globalThis.UzKey))
-				throw new Error(`First register the UID.`);
+				throw new Error(`First register the UUID.`);
 
 			const url = new URL(request.url);
 			globalThis.pathName = url.pathname;
@@ -1290,3 +1290,4 @@ async function MyHomeGame(request, env) {
 </html>`;
     return homePage;
 }
+
